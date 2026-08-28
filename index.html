@@ -1010,7 +1010,7 @@
           <a href="#contact" class="btn btn-secondary">
             <i class="fas fa-paper-plane"></i> Contact Me
           </a>
-          <a href="https://drive.google.com/file/d/1Ylohz2Bld75vPggkRRQZ46_Q9qA9qg9n/view?usp=drive_link" class="btn btn-ghost" onclick="downloadResume()">
+          <a href="https://drive.google.com/file/d/1Ylohz2Bld75vPggkRRQZ46_Q9qA9qg9n/view?usp=drive_link" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-download"></i> Resume
           </a>
         </div>
@@ -1207,16 +1207,14 @@
         <div class="skill-category reveal">
           <div class="skill-cat-header">
             <div class="skill-cat-icon" style="background:rgba(188,140,255,0.12);color:var(--accent2)"><i class="fas fa-brain"></i></div>
-            <span class="skill-cat-name">Core Computer Science</span>
+            <span class="skill-cat-name">AI &amp; Machine Learning</span>
           </div>
           <div class="skill-pills">
-            <span class="skill-pill">Data Structures</span>
-            <span class="skill-pill">Algorithms</span>
-            <span class="skill-pill">OOP</span>
-            <span class="skill-pill">DBMS</span>
-            <span class="skill-pill">OS</span>
-            <span class="skill-pill">Networks</span>
             <span class="skill-pill">Machine Learning</span>
+            <span class="skill-pill">Deep Learning</span>
+            <span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">MobileNetV3</span>
+            <span class="skill-pill">ConvLSTM</span>
           </div>
         </div>
 
@@ -1234,14 +1232,73 @@
 
         <div class="skill-category reveal">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon" style="background:rgba(255,166,0,0.1);color:#ffa600"><i class="fas fa-chart-bar"></i></div>
+            <div class="skill-cat-icon" style="background:rgba(255,166,0,0.1);color:#ffa600"><i class="fas fa-chart-line"></i></div>
+            <span class="skill-cat-name">Data Science</span>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(248,81,73,0.1);color:#f85149"><i class="fas fa-laptop-code"></i></div>
+            <span class="skill-cat-name">Software Development</span>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">OOP</span>
+            <span class="skill-pill">Application Development</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(57,208,216,0.12);color:#39d0d8"><i class="fas fa-database"></i></div>
+            <span class="skill-cat-name">Databases</span>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Database Management</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(188,140,255,0.12);color:var(--accent2)"><i class="fas fa-chart-bar"></i></div>
             <span class="skill-cat-name">Data Visualization</span>
           </div>
           <div class="skill-pills">
             <span class="skill-pill">Excel</span>
             <span class="skill-pill">Power BI</span>
             <span class="skill-pill">Tableau</span>
-            <span class="skill-pill">R</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(63,185,80,0.12);color:var(--accent3)"><i class="fab fa-git-alt"></i></div>
+            <span class="skill-cat-name">Version Control &amp; Tools</span>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(255,166,0,0.1);color:#ffa600"><i class="fas fa-sitemap"></i></div>
+            <span class="skill-cat-name">Core Computer Science</span>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Data Structures &amp; Algorithms</span>
+            <span class="skill-pill">Computer Networks</span>
+            <span class="skill-pill">Operating Systems</span>
+            <span class="skill-pill">DBMS</span>
           </div>
         </div>
 
@@ -1684,11 +1741,6 @@
         btn.style.background = 'var(--accent3)';
         e.target.reset();
       }, 1500);
-    }
-
-    /* ——— RESUME DOWNLOAD ——— */
-    function downloadResume() {
-      alert('📄 Resume download will be available once you link your PDF file.\n\nReplace the href in the Download Resume button with your actual resume URL.');
     }
 
     /* ——— STAGGER ANIMATION DELAYS ——— */
