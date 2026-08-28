@@ -162,37 +162,18 @@
       top: 10px;                        /* float down from the top */
       left: 50%;
       transform: translateX(-50%);
-      width: calc(50% - 20px);        /* give some horizontal margin */
+      width: 90%;                       /* give some horizontal margin */
+      max-width: 1200px;
       z-index: 1000;
- */////////////////////////     
-      width: 90%; 
-      max-width: 1200px; 
-  
-        z-index: 1000;
-        height: var(--nav-height);
-        display: flex;
-        align-items: center;
-        background: var(--bg-glass);
-    /* Backdrop-filter creates the "liquid glass" blur */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  
-  border: 1px solid var(--border);
-  
-  /* Increase radius for a softer liquid look */
-  border-radius: 16px; 
-  transition: var(--transition);
-    
-      
-*/////////////////////////////////////////////
       height: var(--nav-height);
       display: flex;
       align-items: center;
       background: var(--bg-glass);
+      /* Backdrop-filter creates the "liquid glass" blur */
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-lg);   /* soften the liquid look */
       transition: var(--transition);
     }
     .navbar.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
