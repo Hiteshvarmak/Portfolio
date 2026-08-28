@@ -866,7 +866,11 @@
     }
     @media (max-width: 768px) {
       .section { padding: 70px 0; }
-      .nav-links { display: none; }
+      .nav-inner { padding: 0 14px; }
+      .nav-links { gap: 2px; }
+      .nav-links li:nth-child(n+4) { display: none; }
+      .nav-links a { padding: 6px 8px; font-size: 0.8rem; }
+      .nav-actions { gap: 6px; }
       .hamburger { display: flex; }
       .hero-actions { gap: 10px; }
       .btn { padding: 10px 18px; font-size: 0.85rem; }
@@ -965,11 +969,8 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile Menu ("More") -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#about"        onclick="closeMobile()">About</a>
-    <a href="#education"    onclick="closeMobile()">Education</a>
-    <a href="#skills"       onclick="closeMobile()">Skills</a>
     <a href="#experience"   onclick="closeMobile()">Experience</a>
     <a href="#projects"     onclick="closeMobile()">Projects</a>
     <a href="#certifications" onclick="closeMobile()">Certifications</a>
